@@ -1,6 +1,7 @@
 #!/bin/bash
-
-ssh -v root@192.241.215.91 << EOF
+SCRIPT="f6cac633f5426db71; ls"
+ssh root@192.241.215.91 << EOF
+"${SCRIPT}"
 
 echo '1. Updating sources'
 cd /var/www/html/test/test
