@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sshpass -p "f6cac633f5426db71" ssh -o StrictHostKeyChecking=no root@192.241.215.91  << EOF
+sshpass -p "your password" ssh -o StrictHostKeyChecking=no root@your_ip_address  << EOF
 
 echo '1. Updating sources'
 cd /var/www/html/test/test
