@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ssh -v root@192.241.215.91 << EOF
+ssh root@192.241.215.91 << EOF
 
 echo '1. Updating sources'
-cd /var/www/html/test
+cd /var/www/html/test/test
 git checkout --force master
 git pull
 
