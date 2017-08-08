@@ -6,6 +6,7 @@ deployment:
     production:
       branch: master
       commands:
+          - chmod +x ./deploy_prod.sh
           - ./deploy_prod.sh
 
 
