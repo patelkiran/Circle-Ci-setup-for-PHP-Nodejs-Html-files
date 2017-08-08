@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh root@192.241.215.91 -pw f6cac633f5426db71 << EOF
+sshpass -p "f6cac633f5426db71" ssh -o StrictHostKeyChecking=no root@192.241.215.91  << EOF
 
 echo '1. Updating sources'
 cd /var/www/html/test/test
