@@ -1,7 +1,8 @@
 #!/bin/bash
-SCRIPT="f6cac633f5426db71; ls"
-ssh root@192.241.215.91 << EOF
-"${SCRIPT}"
+ssh root@192.241.215.91
+expect "password"
+send "f6cac633f5426db71\r"
+
 
 echo '1. Updating sources'
 cd /var/www/html/test/test
