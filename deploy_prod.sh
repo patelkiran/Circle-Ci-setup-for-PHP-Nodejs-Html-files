@@ -1,6 +1,6 @@
 #!/bin/bash
 
-spawn ssh MyUserName@192.168.20.20
+spawn ssh root@192.241.215.91
 expect "password"
 send "f6cac633f5426db71\r"
 interact
