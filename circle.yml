@@ -6,7 +6,7 @@ deployment:
     production:
       branch: master
       commands:
-          - apt-get install sshpass
+          - sudo apt-get install sshpass
           - chmod +x ./deploy_prod.sh
           - ./deploy_prod.sh
 
