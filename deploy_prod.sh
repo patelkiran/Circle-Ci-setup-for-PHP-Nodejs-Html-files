@@ -1,9 +1,6 @@
 #!/bin/bash
 
-spawn ssh root@192.241.215.91
-expect "password"
-send "f6cac633f5426db71\r"
-interact
+ssh root@192.241.215.91 -pw f6cac633f5426db71 << EOF
 
 echo '1. Updating sources'
 cd /var/www/html/test/test
