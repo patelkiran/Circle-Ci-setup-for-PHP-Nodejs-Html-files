@@ -1,0 +1,13 @@
+test:
+  override:
+    - echo 'no tests, just say us Okay!'
+
+deployment:
+    production:
+      branch: master
+      commands:
+          - sudo apt-get install sshpass
+          - chmod +x ./deploy_prod.sh
+          - ./deploy_prod.sh
+
+
