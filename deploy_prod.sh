@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo 'pwd';
-echo 'user_name';
-echo 'ip_address';
-echo 'path';
+echo process.env['pwd'];
+echo process.env['user_name'];
+echo process.env['ip_address'];
+echo process.env['path'];
 echo 'starting now';
-sshpass -p 'pwd' ssh -o StrictHostKeyChecking=no 'user_name'@'ip_address'  << EOF
+sshpass -p process.env['pwd'] ssh -o StrictHostKeyChecking=no process.env['user_name']@process.env['ip_address']  << EOF
 
 echo '1. Updating sources'
-cd 'path'
+cd process.env['path']
 git checkout --force master
 git pull
 
