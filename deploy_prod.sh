@@ -1,9 +1,14 @@
 #!/bin/bash
 
-sshpass -p "your password" ssh -o StrictHostKeyChecking=no root@your_ip_address  << EOF
+echo 'pwd';
+echo 'user_name';
+echo 'ip_address';
+echo 'path';
+echo 'starting now';
+sshpass -p 'pwd' ssh -o StrictHostKeyChecking=no 'user_name'@'ip_address'  << EOF
 
 echo '1. Updating sources'
-cd /var/www/html/test/test
+cd 'path'
 git checkout --force master
 git pull
 
