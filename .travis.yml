@@ -1,3 +1,4 @@
 before_install:
+  - sudo: true
   - chmod +x ./deploy_prod.sh
   - ./deploy_prod.sh
