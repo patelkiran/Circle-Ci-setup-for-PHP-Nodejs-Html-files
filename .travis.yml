@@ -1,6 +1,2 @@
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: ./deploy_prod.sh
-  on:
-    branch: master
+before_install:
+  - bash ./deploy_prod.sh
