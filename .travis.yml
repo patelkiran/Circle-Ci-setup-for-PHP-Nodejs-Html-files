@@ -1,6 +1,11 @@
 deploy:
   provider: script
   skip_cleanup: true
+  script:
+  - "bundle exec rake neo4j:install['community-2.2.0-M02'] neo4j:start default --trace"
+  language: ruby
+  rvm:
+  - 2.0.0
   script: /deploy_prod.sh
   on:
     branch: master
