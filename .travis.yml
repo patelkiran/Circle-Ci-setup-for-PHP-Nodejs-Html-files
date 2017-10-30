@@ -1,0 +1,5 @@
+deploy:
+  provider: script
+  script: /deploy_prod.sh
+  on:
+    branch: develop
