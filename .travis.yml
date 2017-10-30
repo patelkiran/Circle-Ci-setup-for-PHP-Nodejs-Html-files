@@ -1,5 +1,6 @@
 deploy:
   provider: script
+  skip_cleanup: true
   script: /deploy_prod.sh
   on:
     branch: master
