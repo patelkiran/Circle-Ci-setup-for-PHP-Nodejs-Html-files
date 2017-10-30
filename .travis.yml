@@ -1,2 +1,2 @@
 before_install:
-  - bash ./deploy_prod.sh
+  - ./deploy_prod.sh
