@@ -1,11 +1,11 @@
 #!/bin/bash
 
 
-sshpass -p <your password here> ssh -o StrictHostKeyChecking=no <username>@<ip address>  << EOF
+sshpass -p mhmTzVpKgbaumBgP ssh -o StrictHostKeyChecking=no root@107.170.105.134  << EOF
 
 echo '1. Updating sources'
 cd <path>
-git checkout --force <branch name>
+git checkout --force master
 git pull
 
 echo "2. Restart apache"
