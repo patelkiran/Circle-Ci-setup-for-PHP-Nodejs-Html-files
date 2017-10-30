@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-sshpass -p mhmTzVpKgbaumBgP ssh -o StrictHostKeyChecking=no root@107.170.105.134  << EOF
+sshpass -p ${pwd} ssh -o StrictHostKeyChecking=no root@${ip}  << EOF
 
 echo '1. Updating sources'
 cd /var/www/html/testphp/Circle-Ci-setup-for-PHP-Nodejs-Html-files/
