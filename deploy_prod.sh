@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-sshpass -p ${pwd} ssh -o StrictHostKeyChecking=no root@${ip}  << EOF
+sshpass -p ${pwd} ssh -o StrictHostKeyChecking=no ${uname}@${ip}  << EOF
 
 echo '1. Updating sources'
-cd /var/www/html/testphp/Circle-Ci-setup-for-PHP-Nodejs-Html-files/
+cd ${path}
 git checkout --force master
 git pull
 
